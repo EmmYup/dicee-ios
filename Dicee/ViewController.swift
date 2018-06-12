@@ -35,5 +35,8 @@ class ViewController: UIViewController {
         diceImageView2.image = UIImage(named: diceArray[Int(arc4random_uniform(6))])
     }
     
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+        updateDiceImages()
+    }
 }
 
